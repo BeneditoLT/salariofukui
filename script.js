@@ -15,11 +15,11 @@ function  calcular(){
     var diastr = Number(hirkin.value) + Number(yakin.value) + Number(hirkindo.value) + Number(yakindo.value)
     
     dtr.innerHTML =`Dias  traballhados: ${diastr}`
-    sh.innerHTML =`Hirukin: ${sahirkin}`
-    sy.innerHTML =`Yakin: ${sayakin}`
-    shd.innerHTML =`Hirukin Domingo: ${sahirkindo}`
-    syd.innerHTML =`Yakin Domingo: ${sayakindo}`
-    sbr.innerHTML =`Salario Bruto: ${salBru}`
+    sh.innerHTML =`Hirukin:¥ ${sahirkin}`
+    sy.innerHTML =`Yakin:¥ ${sayakin}`
+    shd.innerHTML =`Hirukin Domingo:¥ ${sahirkindo}`
+    syd.innerHTML =`Yakin Domingo:¥ ${sayakindo}`
+    sbr.innerHTML =`Salario Bruto:¥ ${salBru}`
 
 
 }
