@@ -1,0 +1,41 @@
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(fukui.jpg);
+   
+    font: normal 15pt Arial;
+    
+    }
+    
+    header {
+    
+        color: rgb(207, 10, 10);
+        text-align: center;
+    
+    
+    }
+    
+    section {
+    
+        background: rgb(238, 236, 236);
+        border-radius: 10px;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+        box-shadow: 3px 3px 10px rgb(68, 63, 63);
+    
+    
+    }
+    
+    footer {
+    
+    
+    color:  white;
+    text-align: center;
+    font-style: italic;
+    
+    
+    
+  
+    }
