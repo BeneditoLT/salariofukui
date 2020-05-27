@@ -14,12 +14,12 @@ function  calcular(){
     var salBru = sahirkin + sayakin + sahirkindo + sayakindo
     var diastr = Number(hirkin.value) + Number(yakin.value) + Number(hirkindo.value) + Number(yakindo.value)
     salBru = salBru.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    dtr.innerHTML =`Dias traballhados:..${diastr}`
-    sh.innerHTML  =`Hirukin:...................${sahirkin}`
-    sy.innerHTML  =`Yakin:.....................${sayakin}`
-    shd.innerHTML =`Hirukin Domingo:...${sahirkindo}`
-    syd.innerHTML =`Yakin Domingo......${sayakindo}`
-    sbr.innerHTML =`Salario Bruto:.....${salBru}`
+    dtr.innerHTML =`Dias traballhados:___${diastr}`
+    sh.innerHTML  =`Hirukin:___________${sahirkin}`
+    sy.innerHTML  =`Yakin:____________${sayakin}`
+    shd.innerHTML =`Hirukin Domingo:___${sahirkindo}`
+    syd.innerHTML =`Yakin Domingo_____${sayakindo}`
+    sbr.innerHTML =`Salario Bruto:____${salBru}`
 
 
 }
