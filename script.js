@@ -13,13 +13,30 @@ function  calcular(){
     var sayakindo = ((((Number(salHor.value)*1.35)*1.5) + ((Number(salHor.value)*1.6)*9.5)) * Number(yakindo.value))
     var salBru = sahirkin + sayakin + sahirkindo + sayakindo
     var diastr = Number(hirkin.value) + Number(yakin.value) + Number(hirkindo.value) + Number(yakindo.value)
+   
+    sahirkin = sahirkin.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
+    sayakin= sayakin.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
+    sahirkindo = sahirkindo.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
+    sayakindo = sayakindo.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
     salBru = salBru.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    dtr.innerHTML =`Dias traballhados:___${diastr}`
-    sh.innerHTML  =`Hirukin:___________${sahirkin}`
-    sy.innerHTML  =`Yakin:____________${sayakin}`
-    shd.innerHTML =`Hirukin Domingo:___${sahirkindo}`
-    syd.innerHTML =`Yakin Domingo_____${sayakindo}`
-    sbr.innerHTML =`Salario Bruto:____${salBru}`
+   
+    dtr.innerHTML =`Dias traballhados:`
+    dtrv.innerHTML=`${diastr}`
+    
+    sh.innerHTML  =`Hirukin:`
+    shv.innerHTML = `${sahirkin}`
+    
+    sy.innerHTML  =`Yakin:`
+    syv.innerHTML = `${sayakin}`
+    
+    shd.innerHTML =`Hirukin Domingo:`
+    shdv.innerHTML =`${sahirkindo}`
+    
+    syd.innerHTML =`Yakin Domingo:`
+    sydv.innerHTML = `${sayakindo}`
+    
+    sbr.innerHTML =`Salario Bruto:`
+    sbrv.innerHTML =`${salBru}`
 
 
 }
