@@ -14,15 +14,34 @@
 
     <section>
         <div>
-            <p>Salario Hora: <input type="number" name="valhora" id="valhora" min="0" style="width: 50px;" > </p>
+
+          <table>
+            <tr>
+            <td>Salario Hora:</td>
+            <td><input type="number" name="valhora" id="valhora" min="0" style="width: 50px;" > </td>
+            </tr>
+            <tr>
+            <td>Dias Hirukin:</td>
+            <td><input type="nunber" id="dhk" min="0" style="width: 30px;"> </td>
+            <td>Domingo:</td>
+            <td> <input type="nunber" id="dhkdo" min="0" style="width: 30px;"> </td>
+            </tr> 
+            <td>Dias  Yakin :</td>
+            <td> <input type="number" id="dyk" min="0" style="width: 30px;" > </td> 
+            <td>Domingo:</td> 
+            <td><input type="number" id="dykdo" min="0" style="width: 30px;" ></td> 
+            <tr>
+            <td>Dias Yukyu:</td>  
+            <td><input type="number" id="dyku" min="0" style="width: 30px;" ></td>  
+
+            </tr>           
+             
+            </table>
+
+
             
-            <p>Dias Hirukin: <input type="nunber" id="dhk" min="0" style="width: 30px;"> 
-               Domingo: <input type="nunber" id="dhkdo" min="0" style="width: 30px;"> </p>
-            <p>Dias  Yakin .:  <input type="number" id="dyk" min="0" style="width: 30px;" > 
-               Domingo: <input type="number" id="dykdo" min="0" style="width: 30px;" ></p>
-            
-                     
-            <p><input type="button" value="Calcular" onclick="calcular()"></p>
+                  
+            <input type="button" value="Calcular" onclick="calcular()">
         </div>
        <div>
         <table style="width:80%">
@@ -46,6 +65,9 @@
              </tr> <tr>
               <td id="sbr"></td>
               <td id="sbrv"></td>
+             </tr><tr>
+              <td id="syyk"></td>
+              <td id="syykv"></td>
              </tr>
           </table>
         </div>
