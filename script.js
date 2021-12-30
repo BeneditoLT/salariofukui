@@ -7,10 +7,10 @@ function  calcular(){
     var hirkindo = document.getElementById('dhkdo')
     var yakindo  = document.getElementById('dykdo')
 
-    var sahirkin = ((Number(salHor.value)*8.833333)+ ((Number(salHor.value)*1.25)*2)) * Number(hirkin.value)
-    var sayakin = ((Number(salHor.value)*3.16666) + ((Number(salHor.value)*1.25)*7.833333)) * Number(yakin.value)
-    var sahirkindo = ((((Number(salHor.value)*1.35)*8.833333)+ ((Number(salHor.value)*1.6)*2)) * Number(hirkindo.value)) 
-    var sayakindo = ((((Number(salHor.value)*1.35)*3.16666) + ((Number(salHor.value)*1.6)*7.833333)) * Number(yakindo.value))
+    var sahirkin = ((Number(salHor.value)*8.3333333)+ ((Number(salHor.value)*1.25)*2)) * Number(hirkin.value)
+    var sayakin = ((Number(salHor.value)*3.1666666) + ((Number(salHor.value)*1.25)*7.3333333)) * Number(yakin.value)
+    var sahirkindo = ((((Number(salHor.value)*1.35)*8.33333)+ ((Number(salHor.value)*1.6)*2)) * Number(hirkindo.value)) 
+    var sayakindo = ((((Number(salHor.value)*1.35)*3.1666666) + ((Number(salHor.value)*1.6)*7.3333333)) * Number(yakindo.value))
     var sayukil = ((Number(salHor.value)*9) * Number(yukyu.value))
     var salBru = sahirkin + sayakin + sahirkindo + sayakindo + sayukil
     var diastr = Number(hirkin.value) + Number(yakin.value) + Number(hirkindo.value) + Number(yakindo.value)
