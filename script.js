@@ -35,6 +35,7 @@ function  calcular(){
     sahirkindo = sahirkindo.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
     sayakindo = sayakindo.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
     sayukil = sayukil.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
+    safolfor = safolfor.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
     salBru = salBru.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
     
    
@@ -55,7 +56,9 @@ function  calcular(){
     
     syyk.innerHTML =`Salario Yukyu:`
     syykv.innerHTML = `${sayukil}`
-    
+
+    sffor.innerHTML =`Folga Forçada:`
+    sfforv.innerHTML = `${safolfor}`
 
     sbr.innerHTML =`Salario Bruto:`
     sbrv.innerHTML =`${salBru}`
