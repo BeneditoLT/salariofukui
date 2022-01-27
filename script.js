@@ -29,39 +29,48 @@ function  calcular(){
     var salBru = sahirkin + sayakin + sahirkindo + sayakindo + sayukil + safolfor
     var diastr = Number(hirkin.value) + Number(yakin.value) + Number(hirkindo.value) + Number(yakindo.value)
     
-   
-    sahirkin = sahirkin.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    sayakin= sayakin.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    sahirkindo = sahirkindo.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    sayakindo = sayakindo.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    sayukil = sayukil.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    safolfor = safolfor.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    salBru = salBru.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    
-   
+      
+   if(diastr > 0){
     dtr.innerHTML =`Dias traballhados:`
     dtrv.innerHTML=`${diastr}`
     
+   }
+   
+   if(sahirkin > 1 ){
+    sahirkin = sahirkin.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
     sh.innerHTML  =`Hirukin:`
     shv.innerHTML = `${sahirkin}`
-    
+   }
+
+   if(sayakin > 0){
+    sayakin= sayakin.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
     sy.innerHTML  =`Yakin:`
     syv.innerHTML = `${sayakin}`
-    
+   }
+   if(sayakindo > 0){
+    sahirkindo = sahirkindo.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
     shd.innerHTML =`Hirukin Domingo:`
     shdv.innerHTML =`${sahirkindo}`
-    
+   }
+   if(sayakindo > 0){
+    sayakindo = sayakindo.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
     syd.innerHTML =`Yakin Domingo:`
     sydv.innerHTML = `${sayakindo}`
-    
+   }
+   if(sayukil > 0){
+    sayukil = sayukil.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
     syyk.innerHTML =`Salario Yukyu:`
     syykv.innerHTML = `${sayukil}`
-
+   }
+   if(safolfor > 0){
+    safolfor = safolfor.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
     sffor.innerHTML =`Folga Forçada:`
     sfforv.innerHTML = `${safolfor}`
-
+   }
+   if(salBru > 0){
+    salBru = salBru.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
     sbr.innerHTML =`Salario Bruto:`
     sbrv.innerHTML =`${salBru}`
-
+   }
 
 }
