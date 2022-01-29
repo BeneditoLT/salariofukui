@@ -3,7 +3,6 @@ function  calcular(){
 
 
     var salHor = document.getElementById('valhora')
-    
     var hirkin = document.getElementById('dhk')
     var yakin  = document.getElementById('dyk')
     var yukyu = document.getElementById('dyku')
@@ -28,11 +27,13 @@ function  calcular(){
     var safolfor = (((Number(salHor.value)*9)*porcent) * Number(folgfor.value))
     var salBru = sahirkin + sayakin + sahirkindo + sayakindo + sayukil + safolfor
     var diastr = Number(hirkin.value) + Number(yakin.value) + Number(hirkindo.value) + Number(yakindo.value)
-    
-
-        dtr.innerHTML ='', dtrv.innerHTML='', sh.innerHTML  ='', shv.innerHTML = '', sy.innerHTML  = '', syv.innerHTML = '', shd.innerHTML = '',
-        shdv.innerHTML = '', syd.innerHTML = '', sydv.innerHTML = '', syyk.innerHTML = '', syykv.innerHTML = '', sffor.innerHTML = '',
-        sfforv.innerHTML = '', sbr.innerHTML = '', sbrv.innerHTML =''
+   
+   
+    var texto = ['Hirukin:', 'Hirukin Domingo:','Yakin:', 'Yakin Domingo:', 'Yukiu:', 'Folga forçada:','Salario Bruto:']
+    var salario =[sahirkin,sahirkindo,sayakin,sayakindo,sayukil,safolfor,salBru]
+    var campo = [sh,sy,shd,syd,syyk,sffor,sbr]
+    var campov = [shv,syv,shdv,sydv,syykv,sfforv,sbrv]
+  
        
       
    if(diastr > 0){
@@ -40,42 +41,20 @@ function  calcular(){
     dtrv.innerHTML=`${diastr}`
     
    }
+
    
-   if(sahirkin > 1 ){
-    sahirkin = sahirkin.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    sh.innerHTML  =`Hirukin:`
-    shv.innerHTML = `${sahirkin}`
+   let Saltex = ""
+   for( let i =0; i < salario.length; i++){
+   Saltex = salario[i].toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
+   if(salario[i] < 1){
+       texto[i] = ''
+       Saltex = ''
+   }
+   campo[i].innerHTML  = texto[i]
+   campov[i].innerHTML  = Saltex
+
    }
 
-   if(sayakin > 0){
-    sayakin= sayakin.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    sy.innerHTML  =`Yakin:`
-    syv.innerHTML = `${sayakin}`
-   }
-   if(sayakindo > 0){
-    sahirkindo = sahirkindo.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    shd.innerHTML =`Hirukin Domingo:`
-    shdv.innerHTML =`${sahirkindo}`
-   }
-   if(sayakindo > 0){
-    sayakindo = sayakindo.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    syd.innerHTML =`Yakin Domingo:`
-    sydv.innerHTML = `${sayakindo}`
-   }
-   if(sayukil > 0){
-    sayukil = sayukil.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    syyk.innerHTML =`Salario Yukyu:`
-    syykv.innerHTML = `${sayukil}`
-   }
-   if(safolfor > 0){
-    safolfor = safolfor.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    sffor.innerHTML =`Folga Forçada:`
-    sfforv.innerHTML = `${safolfor}`
-   }
-   if(salBru > 0){
-    salBru = salBru.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'});
-    sbr.innerHTML =`Salario Bruto:`
-    sbrv.innerHTML =`${salBru}`
-   }
+  
 
 }
