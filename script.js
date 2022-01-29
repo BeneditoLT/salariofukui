@@ -30,8 +30,8 @@ function  calcular(){
     var diastr = Number(hirkin.value) + Number(yakin.value) + Number(hirkindo.value) + Number(yakindo.value)
     
 
-        dtr.innerHTML ='', dtrv.innerHTML='', sh.innerHTML  ='', shv.innerHTML = '' ,sy.innerHTML  = '' ,syv.innerHTML = '', shd.innerHTML = ''
-        shdv.innerHTML = '' ,syd.innerHTML = '', sydv.innerHTML = '', syyk.innerHTML = '', syykv.innerHTML = '', sffor.innerHTML = ''
+        dtr.innerHTML ='', dtrv.innerHTML='', sh.innerHTML  ='', shv.innerHTML = '', sy.innerHTML  = '', syv.innerHTML = '', shd.innerHTML = '',
+        shdv.innerHTML = '', syd.innerHTML = '', sydv.innerHTML = '', syyk.innerHTML = '', syykv.innerHTML = '', sffor.innerHTML = '',
         sfforv.innerHTML = '', sbr.innerHTML = '', sbrv.innerHTML =''
        
       
